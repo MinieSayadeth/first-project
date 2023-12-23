@@ -572,7 +572,6 @@ Pricing
 }
 
 .pricing__button {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -752,6 +751,7 @@ Pricing
 .testimonials__rating--title {
     font-size: 20px;
     font-weight: 700;
+    margin-top: 2rem;
 }
 
 .testimonials__review--para {
@@ -922,6 +922,7 @@ Footer
     color: #ffff;
     font-size: 14px;
     padding-bottom: 4px;
+    margin-top: 0.75rem;
 }
 
 .footer__divider {
@@ -970,8 +971,7 @@ Footer
     padding: 8px 10px;
 }
 
-
-/*Mobile Phones*/
+/*Tablets & Large Screens*/
 
 @media (max-width: 1024px) {
     .nav__links {
@@ -982,27 +982,178 @@ Footer
         display: block;
     }
 
-    body {
-        padding: 0 32px;
+    nav,
+    #features,
+    #quality__work,
+    #steps,
+    #values,
+    #pricing,
+    #testimonials,
+    #faq,
+    #CTA {
+    padding: 0 40px;
     }
+    
+    #header {
+        height: 100vh;
+    }
+
+    .header__container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .header__container--left,
+    .header__customers,
+    .header__container--right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
 
     .header__container--left {
         margin: 0 auto;
-        width: 100%;
         max-width: 32rem;
     }
 
     .header__title {
         font-size: 1.875rem;
-        text-align: center;
-    }
-
-    .header__container--right {
-        display: none;
     }
 
     .header__customers {
         margin-top: 3rem;
+    }
+
+    .header__customers--title {
+        font-size: 0.875rem;
+    }
+
+   .header__customers--img {
+        padding: 0;
+    }
+
+
+    .header__container--right-img {
+        max-width: 32rem;
+        margin-top: 3rem;
+        overflow: hidden;
+    }
+
+    .header__input {
+        width: 80%;
+    }
+
+    #features {
+        padding: 6rem 0;
+    }
+
+    .features__container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .features__para {
+        max-width: 36rem;
+        font-size: 1rem;
+    }
+
+    .features__services {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .features__services--service {
+        width: calc(100% / 2);
+    }
+
+    .features__services--service,
+    .step__description {
+        font-size: .875rem;
+    }
+
+
+
+    .title__section {
+        font-size: 2.25rem;
+    }
+
+
+    .default__para {
+        font-size: 1rem;
+    }
+
+    .values__description--container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .pricing__plans--container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .pricing__plans {
+        width: 100%;
+        max-width: 384px;
+    }
+
+    .testimonials__arrows {
+        margin-left: 16px;
+    }
+
+    .CTA__container {
+        padding: 40px 0;
+    }
+
+    .cta__row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cta__button {
+        margin-left: 0;
+    }
+
+    .cta__title {
+        margin: 30px 0;
+    }
+
+    .footer__company-info {
+        padding: 80px 40px;
+    }
+}
+
+/*Mobile Phones*/
+@media (max-width: 768px) {
+
+    .default__para {
+        font-size: 14px;
+    }
+
+    .features__services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 384px;
+    }
+
+    .features__services--service {
+        width: 100%;
+    }
+
+    .features__services {
     }
 
 }
