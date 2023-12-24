@@ -289,13 +289,9 @@ Header
     width: 60%;
 }
 
-.header__container--right-wrapper {
-    width: 100%;
-    max-width: 60%;
-}
 
 .header__container--right-img {
-    width: 760px;
+    max-width: 100%;
 }
 
 /* 
@@ -1138,7 +1134,8 @@ Footer
 /*Mobile Phones*/
 @media (max-width: 768px) {
 
-    .default__para {
+    .default__para,
+    .pricing__para {
         font-size: 14px;
     }
 
@@ -1153,8 +1150,134 @@ Footer
         width: 100%;
     }
 
-    .features__services {
+    .quality__work--container,
+    .values__container {
+        flex-wrap: wrap-reverse;
     }
 
-}
+    .quality__work--container,
+    .steps__container,
+    .testimonals__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .steps__container,
+    .testimonals__container {
+        flex-wrap: wrap;
+    }
+
+    .steps__column--right,
+    .step__description {
+        margin: 0 auto;
+    }
+
+    .step__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .step__texts {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .quality__work--container-left {
+        margin-right: 0;
+        width: 100%;
+        max-width: 448px;
+    }
+
+    .subtitle_purple {
+        width: 100%;
+        text-align: center;
+    }
+
+    .quality__work--img--wrapper {
+        width: 448px;
+    }
+
+    .quality__work--container-right {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .quality__work--btn {
+        margin: 0 auto;
+        margin-top: 32px;
+    }
+
+    .values__column--left,
+    .values__column--right,
+    .values__subtitle {
+        width: 100%;
+        max-width: 60%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .values__subtitle {
+        margin: 0;
+    }
+
+    .values__icon--title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title__pricing {
+        font-size: 48px;
+    }
+
+    .testimonials__left--container {
+        width: 100%;
+    }
+
+    .testimonials__img {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+
+    .testimonials__right--container {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 448px;
+    }
+
+    .testimonials__reviewer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__links {
+        width: 100%;
+    }
+
+    .footer__company-info {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .footer__social--links,
+    .footer__logo {
+        margin: 38px 0;
+    }
+
+    .footer__company-info {
+        padding: 42px 0;
+    }
+
+    }
+
+
 
