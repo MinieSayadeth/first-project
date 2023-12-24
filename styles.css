@@ -278,8 +278,12 @@ Header
     font-weight: 700;
 }
 
+.header__customers--wrapper {
+    width: 100%;
+}
+
 .header__customers--img {
-    width: 528px;
+    width: 100%;
     margin: 16px 0;
     padding-right: 128px;
     opacity: .5;
@@ -991,7 +995,7 @@ Footer
     }
     
     #header {
-        height: 100vh;
+        padding: 6rem;
     }
 
     .header__container {
@@ -1036,8 +1040,6 @@ Footer
 
     .header__container--right-img {
         max-width: 100%;
-        margin-top: 3rem;
-        overflow: hidden;
     }
 
     .header__input {
@@ -1045,7 +1047,7 @@ Footer
     }
 
     #features {
-        padding: 6rem 0;
+        margin: 6rem 0;
     }
 
     .features__container {
